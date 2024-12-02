@@ -1,4 +1,5 @@
-from input.input_one_a import left_list, right_list
+
+from input.input_1_a import left_list, right_list
 
 if __name__ == "__main__":
     left_list_sorted = sorted(left_list)

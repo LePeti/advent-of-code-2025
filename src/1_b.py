@@ -1,6 +1,7 @@
+
 from collections import Counter
 
-from input.input_one_a import left_list, right_list
+from input.input_1_a import left_list, right_list
 
 if __name__ == "__main__":
     right_counter = Counter(right_list)
