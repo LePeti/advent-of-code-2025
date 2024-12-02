@@ -1,11 +1,11 @@
-from input.input_one_a import list_a, list_b
+from input.input_one_a import left_list, right_list
 
 if __name__ == "__main__":
-    list_a_sorted = sorted(list_a)
-    list_b_sorted = sorted(list_b)
+    left_list_sorted = sorted(left_list)
+    right_list_sorted = sorted(right_list)
 
-    diffs = [abs(a - b) for a, b in zip(list_a_sorted, list_b_sorted)]
+    diffs = [abs(a - b) for a, b in zip(left_list_sorted, right_list_sorted)]
 
-    solution = sum([abs(a - b) for a, b in zip(list_a_sorted, list_b_sorted)])
+    solution = sum([abs(a - b) for a, b in zip(left_list_sorted, right_list_sorted)])
 
     print(solution)
