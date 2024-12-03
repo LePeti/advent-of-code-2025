@@ -14,10 +14,11 @@ if __name__ == "__main__":
 
     # valid operations after the first "don't" appear
     for dont_split in dont_splits[1:]:
-        # split the string by "do()" and then rejoin the rest of the string after the first one
-        do_splits = dont_split.split("do()")
-        enabled_part = "".join(do_splits[1:])
-        valid_operations += pattern.findall(enabled_part)
+        # find the first occurrence of "do()" and use the part after it
+        do_index = dont_split.find("do()")
+        if do_index != -1:
+            enabled_part = dont_split[do_index:]
+            valid_operations += pattern.findall(enabled_part)
 
     result = sum([int(x) * int(y) for x, y in valid_operations])
 
