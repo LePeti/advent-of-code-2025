@@ -11,6 +11,7 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "env": {"PYTHONPATH": "${workspaceRoot}"},
+            "python": "/Users/peterlukacs/.pyenv/versions/aoc25-py3.11/bin/python"
         }
     ]
 }
