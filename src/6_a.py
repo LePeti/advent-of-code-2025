@@ -18,7 +18,7 @@ def find_starting_position(map: np.ndarray) -> Position:
 
 def go_in_direction_until_object(
     map: np.ndarray, direction: str, position: Position
-) -> tuple[np.ndarray, bool]:
+) -> Tuple[np.ndarray, Position, bool]:
 
     potential_paths_ahead = {
         "UP": map[: position[0], position[1]][::-1],
